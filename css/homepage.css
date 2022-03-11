@@ -1,0 +1,417 @@
+/* Navbar */
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    font-weight: 500;
+    color: #0c145a;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #0c145a;
+}
+
+.jumbotron {
+    position: relative;
+    background: none;
+}
+
+.jumbotron:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(https://placebear.com/g/900/300);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+body .choose {
+    background-color: #ffffff;
+}
+
+body .choose h1 {
+    color: #232323;
+    font-weight: 700 !important;
+}
+
+body .choose p {
+    color: #879fb0;
+}
+
+@media screen and (min-width: 768px) {
+    body .choose h1 {
+        font-size: 60px !important;
+    }
+}
+
+body .cl-blue {
+    color: #0f52ba !important;
+}
+
+.dropdown-menu>li.column-menu ul {
+    display: inline-block;
+    list-style: none outside none;
+    margin: 10px;
+    width: 100%;
+}
+
+.dropdown-menu>li.column-menu li {
+    display: inline;
+    float: left;
+    width: 100%;
+}
+
+.dropdown-menu>li.column-menu:first-child {
+    margin-left: 0;
+}
+
+.dropdown-menu>li.column-menu li:not(:first-child) {
+    margin-left: 10px;
+}
+
+.dropdown-menu>li.column-menu li:first-child {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #340f5a;
+}
+
+header {
+    position: relative;
+    height: 120vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+    header {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+    header video {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #7e8cac;
+}
+
+.navbar-light .btn-sign-in {
+    color: #0c145a;
+    background-color: #e7eaf5;
+    padding: 0.75rem 1.875rem;
+}
+
+
+/*  */
+
+
+/* Header */
+
+.header .header-title {
+    font-size: 2.625rem;
+    line-height: 1.5;
+}
+
+.header .btn-get {
+    background-color: #4d17e2;
+    padding: 0.75rem 3rem;
+}
+
+.header .btn-learn:hover {
+    color: #0c145a;
+}
+
+.header .card {
+    border-radius: 1rem;
+    box-shadow: -8px 8px 58px 0px rgba(0, 0, 0, 0.1);
+}
+
+.header .left-card {
+    width: 207px;
+    height: 112px;
+    top: 6.68rem;
+    left: -3.625rem;
+    padding: 0.875rem;
+}
+
+.header .right-card {
+    width: 135px;
+    height: 177px;
+    bottom: 6.5rem;
+    right: -3.2rem;
+    padding: 1.25rem 1.5rem;
+}
+
+.header .right-card-support {
+    padding: 0.063rem 0.625rem;
+    background-color: #00baff;
+    width: max-content;
+    border-radius: 0.375rem;
+    bottom: -0.5rem;
+    left: auto;
+    right: auto;
+}
+
+
+/*  */
+
+
+/* Feature */
+
+.feature .feature-card {
+    background-color: #f9faff;
+    padding: 1.875rem;
+    border-radius: 1.625rem;
+    margin-right: 16px;
+}
+
+.feature .feature-cardd {
+    background-color: #f9faff;
+    padding: 1.875rem;
+    border-radius: 1.625rem;
+    margin-right: 16px;
+}
+
+
+/*  */
+
+
+/* Featured Game */
+
+.featured-game .overflow-setting {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.featured-game .featured-game-card {
+    transition: all 0.4s;
+    border-radius: 1.625rem;
+    width: 205px;
+    height: 270px;
+}
+
+.featured-game .featured-game-card:hover {
+    transition: all 0.4s;
+    border: 4px solid #2b2467;
+}
+
+.featured-game .featured-game-card:hover img {
+    transition: all 0.4s;
+    filter: blur(40px);
+    width: 181px;
+    height: 246px;
+}
+
+.featured-game .featured-game-card .blur-sharp {
+    overflow: hidden;
+    border-radius: 1.625rem;
+}
+
+.featured-game .featured-game-card:hover .blur-sharp {
+    width: 192px;
+    border: 7px solid white;
+}
+
+.featured-game .cover {
+    transition: all 0.4s;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    height: -webkit-fill-available;
+}
+
+.featured-game .featured-game-card:hover .cover {
+    opacity: 1;
+}
+
+.featured-game .game-icon {
+    margin-top: 3.125rem;
+}
+
+@media (min-width: 768px) {
+    .featured-game .overflow-setting {
+        overflow: hidden;
+    }
+}
+
+
+/*  */
+
+
+/* Reached */
+
+.reached .vertical-line {
+    width: 1px;
+    background-color: #e7eaf5;
+    height: 94px;
+}
+
+.reached .horizontal-line {
+    width: 240px;
+    background-color: #e7eaf5;
+    height: 1px;
+}
+
+
+/*  */
+
+
+/* Story */
+
+.story .btn-read {
+    padding: 0.75rem 3rem;
+    background-color: #e7eaf5;
+}
+
+.story .img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*  */
+
+
+/* Footer */
+
+footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #f9faff;
+}
+
+footer ul {
+    margin-bottom: 0;
+}
+
+footer ul li a {
+    transition: 0.2s;
+}
+
+footer ul li a:hover {
+    color: #4d17e2;
+    text-decoration: underline !important;
+    background-color: transparent;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {}
+
+@media (max-width: 768px) {}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    /* Header */
+    /*  */
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    /* Navbar */
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
+    }
+    /*  */
+    /* Header */
+    .header .underline-blue {
+        text-decoration: none;
+        position: relative;
+    }
+    .header .underline-blue:after {
+        position: absolute;
+        content: "";
+        height: 8px;
+        bottom: 11px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: #00baff;
+        z-index: -10;
+    }
+    /*  */
+    /* Featured Game */
+    .featured-game .featured-game-card:hover .blur-sharp {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+/* X-Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
